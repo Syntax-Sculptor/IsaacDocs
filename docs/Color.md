@@ -33,20 +33,21 @@ ___
 ## Functions
 ### Lerp () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static [Color](Color.md) Lerp ( [Color](Color.md) m1, [Color](Color.md) m2, float t ) {: .copyable aria-label='Functions' }
+#### static [Color](Color.md) Lerp ( [Color](Color.md) c1, [Color](Color.md) c2, float t ) {: .copyable aria-label='Functions' }
 
-Linear Interpolation between two colors. `:::lua t` is the "progress" of the interpolation. Setting `:::lua t = 0.5` means that the color in the middle of m1 and m2 will be returned.
+Returns a new color by blending two existing colors (`c1` and `c2`) based on `t`. `t` is a ratio between 0 and 1 which determines the position between the two colors, where 0 corresponds to `c2` and 1 corresponds to `c2`. For example, having `t` be 0.5 would return a color exactly in the middle of `c1` and `c2`.
 ___
 ### Reset () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 
+Resets the color back to the default color, `:::lua Color(1, 1, 1, 1)`, which is white.
 ___
 ### Set·Colorize () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetColorize ( float Red, float Green, float Blue, float Amount ) {: .copyable aria-label='Functions' }
 
-The colorize function can be used to change the color of sprites. Its the best for that purpose, since it does not affect existing coloranimations like the flashing of creep.
+The colorize function can be used to change the color of sprites. Its the best for that purpose, since it does not affect existing color animations like the flashing of creep.
 
 The values can be between 0 and 1 for normal coloration. if you use higher numbers the color gets more vibrant.
 
@@ -70,19 +71,18 @@ The values can be between 0 and 1 for normal coloration. if you use higher numbe
       end
     end)
     ```
-
 ___
 ### Set·Offset () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetOffset ( float RedOffset, float GreenOffset, float BlueOffset ) {: .copyable aria-label='Functions' }
 
-Offset is a color that gets added to the sprite after the Tint was applied.
+Sets the color's offset. The offset is a color that's added to the sprite after its tint was applied.
 ___
 ### Set·Tint () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetTint ( float RedTint, float GreenTint, float BlueTint, float AlphaTint ) {: .copyable aria-label='Functions' }
 
-Tint acts like a color multiplicator.
+Sets the color's tint. The tint acts like a color multiplier.
 ___
 ## Variables
 ### A {: aria-label='Variables' }
