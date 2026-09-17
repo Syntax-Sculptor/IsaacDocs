@@ -1,2 +1,6 @@
 /site
 /scripts/results/*
+/bin
+/lib
+lib64
+pyvenv.cfg

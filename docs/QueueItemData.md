@@ -19,17 +19,18 @@ search:
 
 ## Variables
 ### Charge {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int Charge {: .copyable aria-label='Variables' }
 
 ___
 ### Item {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [ItemConfig Item](ItemConfig_Item.md) Item {: .copyable aria-label='Variables' }
 
 ___
 ### Touched {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean Touched {: .copyable aria-label='Variables' }
 
+Used to identify whether a collectible has been raised once, affecting Transformation Progress.
 ___

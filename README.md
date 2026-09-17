@@ -13,13 +13,13 @@ This project aims to make the Binding of Isaac modding documentation better by p
 - **Last visited pages** - history
 - **Dark mode**
 - **Quick Edit** - Button
-- **Smart-Copy** Feature to quickly copy 
+- **Smart-Copy** Feature to quickly copy
 - Automatic deployment & updates (using Github actions)
 - and a lot more!
 
 ## Technology used
 
-- [MkDocs](https://www.mkdocs.org/) as the static site generator 
+- [MkDocs](https://www.mkdocs.org/) as the static site generator
 - [MKDocs Material Theme](https://squidfunk.github.io/mkdocs-material/)
 - [mark.js](https://markjs.io/) for better search highlighting
 - Python 3.x + Beautiful Soup for conversion tools
@@ -29,7 +29,9 @@ This project aims to make the Binding of Isaac modding documentation better by p
 
 1. Clone the repository.
 1. Install a current version of Python 3.x.
-1. `pip install -r requirements.txt`
 1. `cd IsaacDocs`
+1. `python3 -m venv .`
+1. `. ./bin/activate`s
+1. `pip install -r requirements.txt`
 1. Use `mkdocs serve` to create a locally hosted version of the page available at: `http://127.0.0.1:8000/`
 1. Alternatively, use `mkdocs build` to build a static version of the page.
